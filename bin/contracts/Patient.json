@@ -1,0 +1,1060 @@
+{
+    "contractName": "Patient",
+    "abi": [
+        {
+            "inputs": [
+                {
+                    "internalType": "address",
+                    "name": "_address",
+                    "type": "address"
+                }
+            ],
+            "stateMutability": "nonpayable",
+            "type": "constructor"
+        },
+        {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "previousOwner",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "newOwner",
+                    "type": "address"
+                }
+            ],
+            "name": "OwnershipTransferred",
+            "type": "event"
+        },
+        {
+            "inputs": [],
+            "name": "isOwner",
+            "outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "string",
+                    "name": "_data",
+                    "type": "string"
+                },
+                {
+                    "internalType": "string",
+                    "name": "_encryptedKey1",
+                    "type": "string"
+                },
+                {
+                    "internalType": "string",
+                    "name": "_encryptedKey2",
+                    "type": "string"
+                }
+            ],
+            "name": "newRecord",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "owner",
+            "outputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "name": "records",
+            "outputs": [
+                {
+                    "internalType": "contract Record",
+                    "name": "",
+                    "type": "address"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "renounceOwnership",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "address",
+                    "name": "newOwner",
+                    "type": "address"
+                }
+            ],
+            "name": "transferOwnership",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        }
+    ],
+    "metadata": "{\"compiler\":{\"version\":\"0.6.1+commit.e6f7d5a4\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_address\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"previousOwner\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"OwnershipTransferred\",\"type\":\"event\"},{\"inputs\":[],\"name\":\"isOwner\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"string\",\"name\":\"_data\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"_encryptedKey1\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"_encryptedKey2\",\"type\":\"string\"}],\"name\":\"newRecord\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"records\",\"outputs\":[{\"internalType\":\"contract Record\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"renounceOwnership\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"transferOwnership\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{\"isOwner()\":{\"details\":\"Returns true if the caller is the current owner.\"},\"owner()\":{\"details\":\"Returns the address of the current owner.\"},\"renounceOwnership()\":{\"details\":\"Leaves the contract without owner. It will not be possible to call `onlyOwner` functions anymore. Can only be called by the current owner.     * NOTE: Renouncing ownership will leave the contract without an owner, thereby removing any functionality that is only available to the owner.\"},\"transferOwnership(address)\":{\"details\":\"Transfers ownership of the contract to a new account (`newOwner`). Can only be called by the current owner.\"}}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"d:/tutorials/Html_Css/My_Websites/ASP.Net Core/MedicalOperations/contracts/Patient.sol\":\"Patient\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"d:/tutorials/Html_Css/My_Websites/ASP.Net Core/MedicalOperations/contracts/Context.sol\":{\"keccak256\":\"0x004127bbacaad591318e0c0aa35c3b33f93ca4c91b0e9953bbefed6e65367b38\",\"urls\":[\"bzz-raw://8ae4e6c5d6210113e0b2aabea3b9e2fbb024c666b43524a4ac96fcdcbc354f0f\",\"dweb:/ipfs/QmZB469rjFV4RrGdyh9Cr4DM4S7z6xwpSUNC37E2mSEXJm\"]},\"d:/tutorials/Html_Css/My_Websites/ASP.Net Core/MedicalOperations/contracts/Ownable.sol\":{\"keccak256\":\"0x8ed3bff30e502219af6350209435a70a73e43ac1cdbac77c242645ea417cdd01\",\"urls\":[\"bzz-raw://fd485bd6ad37d9c3186858e0fc0719c1058fc5ab60b709bd43b0437acd596994\",\"dweb:/ipfs/QmZ9k5ztRu7nvZTeGy62bDnePjpR4tmA8YK5aU2AgNEoeH\"]},\"d:/tutorials/Html_Css/My_Websites/ASP.Net Core/MedicalOperations/contracts/Patient.sol\":{\"keccak256\":\"0xa41d818164bf89eb160ac056bc45ef68325b797c26b25e45814b7bce6794fb44\",\"urls\":[\"bzz-raw://81f2b97ab9992381d4a3088b080ad3cf553387d1d3f080fecbd6024c45998bf8\",\"dweb:/ipfs/Qmdh9HKSp19mMwQ4bBUhmf7nv8E24istXdMyYhApo24CgZ\"]},\"d:/tutorials/Html_Css/My_Websites/ASP.Net Core/MedicalOperations/contracts/PatientsFactory.sol\":{\"keccak256\":\"0xba63af2470cb0f5080ded4079f73c21ca8fbb8e7f2a3e8fcf47d847bd632db6e\",\"urls\":[\"bzz-raw://85cec12ddd616b7f958c101f7adc0ec8151629a27aa9276abce2f3ccae58f826\",\"dweb:/ipfs/QmSZCxWBZQHEbAY55TSgXDTVBSFqRSu3us9PPLwpsVLXZJ\"]},\"d:/tutorials/Html_Css/My_Websites/ASP.Net Core/MedicalOperations/contracts/Record.sol\":{\"keccak256\":\"0x44d621ff2385f73efee47473d96c77125e6d4c1beec67e8f5df9b4b579321b54\",\"urls\":[\"bzz-raw://8accc9f97052f1d9409ad6748751339ee25d8821589e8bd2d2cd69bd7e3f12c6\",\"dweb:/ipfs/QmcpcTSTKWD3vpKNsUfWDE8U5qEPFjmRZMpvEAYqQcHcHF\"]}},\"version\":1}",
+    "bytecode": "608060405234801561001057600080fd5b50604051610ca1380380610ca18339818101604052602081101561003357600080fd5b505160006100486001600160e01b036100b716565b600080546001600160a01b0319166001600160a01b0383169081178255604051929350917f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0908290a350600280546001600160a01b0319166001600160a01b03929092169190911790556100bb565b3390565b610bd7806100ca6000396000f3fe608060405234801561001057600080fd5b50600436106100625760003560e01c80633446106714610067578063715018a6146100a05780638da5cb5b146100aa5780638f32d59b146100b257806396e8d14c146100ce578063f2fde38b146101e2575b600080fd5b6100846004803603602081101561007d57600080fd5b5035610208565b604080516001600160a01b039092168252519081900360200190f35b6100a861022f565b005b6100846102d2565b6100ba6102e1565b604080519115158252519081900360200190f35b6100a8600480360360608110156100e457600080fd5b8101906020810181356401000000008111156100ff57600080fd5b82018360208201111561011157600080fd5b8035906020019184600183028401116401000000008311171561013357600080fd5b91939092909160208101903564010000000081111561015157600080fd5b82018360208201111561016357600080fd5b8035906020019184600183028401116401000000008311171561018557600080fd5b9193909290916020810190356401000000008111156101a357600080fd5b8201836020820111156101b557600080fd5b803590602001918460018302840111640100000000831117156101d757600080fd5b509092509050610305565b6100a8600480360360208110156101f857600080fd5b50356001600160a01b03166104fb565b6001818154811061021557fe5b6000918252602090912001546001600160a01b0316905081565b6102376102e1565b610288576040805162461bcd60e51b815260206004820181905260248201527f4f776e61626c653a2063616c6c6572206973206e6f7420746865206f776e6572604482015290519081900360640190fd5b600080546040516001600160a01b03909116907f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0908390a3600080546001600160a01b0319169055565b6000546001600160a01b031690565b600080546001600160a01b03166102f6610560565b6001600160a01b031614905090565b60025460408051636460775160e01b815233600482015290516001600160a01b0390921691636460775191602480820192602092909190829003018186803b15801561035057600080fd5b505afa158015610364573d6000803e3d6000fd5b505050506040513d602081101561037a57600080fd5b50516103cd576040805162461bcd60e51b815260206004820152601860248201527f4f6e6c7920636c696e6963732061726520616c6c6f7765640000000000000000604482015290519081900360640190fd5b600086866103d96102d2565b87873388886040516103ea90610604565b6001600160a01b0380881660208301528416606082015260a0808252810188905280604081016080820160c083018c8c80828437600083820152601f01601f191690910185810384528981526020019050898980828437600083820152601f01601f1916909101858103835286815260200190508686808284376000838201819052604051601f909201601f19169093018190039e509c50909a5050505050505050505050f0801580156104a2573d6000803e3d6000fd5b506001805480820182556000919091527fb10e2d527612073b26eecdfd717e6a320cf44b4afac2b0732d9fcbe2b7fa0cf60180546001600160a01b0319166001600160a01b039290921691909117905550505050505050565b6105036102e1565b610554576040805162461bcd60e51b815260206004820181905260248201527f4f776e61626c653a2063616c6c6572206973206e6f7420746865206f776e6572604482015290519081900360640190fd5b61055d81610564565b50565b3390565b6001600160a01b0381166105a95760405162461bcd60e51b8152600401808060200182810382526026815260200180610b7c6026913960400191505060405180910390fd5b600080546040516001600160a01b03808516939216917f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e091a3600080546001600160a01b0319166001600160a01b0392909216919091179055565b61056a806106128339019056fe608060405234801561001057600080fd5b5060405161056a38038061056a833981810160405260a081101561003357600080fd5b810190808051604051939291908464010000000082111561005357600080fd5b90830190602082018581111561006857600080fd5b825164010000000081118282018810171561008257600080fd5b82525081516020918201929091019080838360005b838110156100af578181015183820152602001610097565b50505050905090810190601f1680156100dc5780820380516001836020036101000a031916815260200191505b5060408181526020830151920180519294919391928464010000000082111561010457600080fd5b90830190602082018581111561011957600080fd5b825164010000000081118282018810171561013357600080fd5b82525081516020918201929091019080838360005b83811015610160578181015183820152602001610148565b50505050905090810190601f16801561018d5780820380516001836020036101000a031916815260200191505b506040818152602083015192018051929491939192846401000000008211156101b557600080fd5b9083019060208201858111156101ca57600080fd5b82516401000000008111828201881017156101e457600080fd5b82525081516020918201929091019080838360005b838110156102115781810151838201526020016101f9565b50505050905090810190601f16801561023e5780820380516001836020036101000a031916815260200191505b5060405250508551610258915060009060208801906102b7565b506001600160a01b03841660009081526001602090815260409091208451610282928601906102b7565b506001600160a01b038216600090815260016020908152604090912082516102ac928401906102b7565b505050505050610352565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f106102f857805160ff1916838001178555610325565b82800160010185558215610325579182015b8281111561032557825182559160200191906001019061030a565b50610331929150610335565b5090565b61034f91905b80821115610331576000815560010161033b565b90565b610209806103616000396000f3fe608060405234801561001057600080fd5b50600436106100365760003560e01c806306240aca1461003b57806373d4a13a146100d6575b600080fd5b6100616004803603602081101561005157600080fd5b50356001600160a01b03166100de565b6040805160208082528351818301528351919283929083019185019080838360005b8381101561009b578181015183820152602001610083565b50505050905090810190601f1680156100c85780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b610061610178565b60016020818152600092835260409283902080548451600294821615610100026000190190911693909304601f81018390048302840183019094528383529192908301828280156101705780601f1061014557610100808354040283529160200191610170565b820191906000526020600020905b81548152906001019060200180831161015357829003601f168201915b505050505081565b6000805460408051602060026001851615610100026000190190941693909304601f810184900484028201840190925281815292918301828280156101705780601f106101455761010080835404028352916020019161017056fea264697066735822122068c30458ea1da7292130cface386ebe2353b4ae6edbc294b9685792be135ae3064736f6c634300060100334f776e61626c653a206e6577206f776e657220697320746865207a65726f2061646472657373a2646970667358221220efd3a98e5902490ad44defae4fd0682ccc394dfc0cf01d217eedf74b3771985564736f6c63430006010033",
+    "deployedBytecode": "608060405234801561001057600080fd5b50600436106100625760003560e01c80633446106714610067578063715018a6146100a05780638da5cb5b146100aa5780638f32d59b146100b257806396e8d14c146100ce578063f2fde38b146101e2575b600080fd5b6100846004803603602081101561007d57600080fd5b5035610208565b604080516001600160a01b039092168252519081900360200190f35b6100a861022f565b005b6100846102d2565b6100ba6102e1565b604080519115158252519081900360200190f35b6100a8600480360360608110156100e457600080fd5b8101906020810181356401000000008111156100ff57600080fd5b82018360208201111561011157600080fd5b8035906020019184600183028401116401000000008311171561013357600080fd5b91939092909160208101903564010000000081111561015157600080fd5b82018360208201111561016357600080fd5b8035906020019184600183028401116401000000008311171561018557600080fd5b9193909290916020810190356401000000008111156101a357600080fd5b8201836020820111156101b557600080fd5b803590602001918460018302840111640100000000831117156101d757600080fd5b509092509050610305565b6100a8600480360360208110156101f857600080fd5b50356001600160a01b03166104fb565b6001818154811061021557fe5b6000918252602090912001546001600160a01b0316905081565b6102376102e1565b610288576040805162461bcd60e51b815260206004820181905260248201527f4f776e61626c653a2063616c6c6572206973206e6f7420746865206f776e6572604482015290519081900360640190fd5b600080546040516001600160a01b03909116907f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0908390a3600080546001600160a01b0319169055565b6000546001600160a01b031690565b600080546001600160a01b03166102f6610560565b6001600160a01b031614905090565b60025460408051636460775160e01b815233600482015290516001600160a01b0390921691636460775191602480820192602092909190829003018186803b15801561035057600080fd5b505afa158015610364573d6000803e3d6000fd5b505050506040513d602081101561037a57600080fd5b50516103cd576040805162461bcd60e51b815260206004820152601860248201527f4f6e6c7920636c696e6963732061726520616c6c6f7765640000000000000000604482015290519081900360640190fd5b600086866103d96102d2565b87873388886040516103ea90610604565b6001600160a01b0380881660208301528416606082015260a0808252810188905280604081016080820160c083018c8c80828437600083820152601f01601f191690910185810384528981526020019050898980828437600083820152601f01601f1916909101858103835286815260200190508686808284376000838201819052604051601f909201601f19169093018190039e509c50909a5050505050505050505050f0801580156104a2573d6000803e3d6000fd5b506001805480820182556000919091527fb10e2d527612073b26eecdfd717e6a320cf44b4afac2b0732d9fcbe2b7fa0cf60180546001600160a01b0319166001600160a01b039290921691909117905550505050505050565b6105036102e1565b610554576040805162461bcd60e51b815260206004820181905260248201527f4f776e61626c653a2063616c6c6572206973206e6f7420746865206f776e6572604482015290519081900360640190fd5b61055d81610564565b50565b3390565b6001600160a01b0381166105a95760405162461bcd60e51b8152600401808060200182810382526026815260200180610b7c6026913960400191505060405180910390fd5b600080546040516001600160a01b03808516939216917f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e091a3600080546001600160a01b0319166001600160a01b0392909216919091179055565b61056a806106128339019056fe608060405234801561001057600080fd5b5060405161056a38038061056a833981810160405260a081101561003357600080fd5b810190808051604051939291908464010000000082111561005357600080fd5b90830190602082018581111561006857600080fd5b825164010000000081118282018810171561008257600080fd5b82525081516020918201929091019080838360005b838110156100af578181015183820152602001610097565b50505050905090810190601f1680156100dc5780820380516001836020036101000a031916815260200191505b5060408181526020830151920180519294919391928464010000000082111561010457600080fd5b90830190602082018581111561011957600080fd5b825164010000000081118282018810171561013357600080fd5b82525081516020918201929091019080838360005b83811015610160578181015183820152602001610148565b50505050905090810190601f16801561018d5780820380516001836020036101000a031916815260200191505b506040818152602083015192018051929491939192846401000000008211156101b557600080fd5b9083019060208201858111156101ca57600080fd5b82516401000000008111828201881017156101e457600080fd5b82525081516020918201929091019080838360005b838110156102115781810151838201526020016101f9565b50505050905090810190601f16801561023e5780820380516001836020036101000a031916815260200191505b5060405250508551610258915060009060208801906102b7565b506001600160a01b03841660009081526001602090815260409091208451610282928601906102b7565b506001600160a01b038216600090815260016020908152604090912082516102ac928401906102b7565b505050505050610352565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f106102f857805160ff1916838001178555610325565b82800160010185558215610325579182015b8281111561032557825182559160200191906001019061030a565b50610331929150610335565b5090565b61034f91905b80821115610331576000815560010161033b565b90565b610209806103616000396000f3fe608060405234801561001057600080fd5b50600436106100365760003560e01c806306240aca1461003b57806373d4a13a146100d6575b600080fd5b6100616004803603602081101561005157600080fd5b50356001600160a01b03166100de565b6040805160208082528351818301528351919283929083019185019080838360005b8381101561009b578181015183820152602001610083565b50505050905090810190601f1680156100c85780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b610061610178565b60016020818152600092835260409283902080548451600294821615610100026000190190911693909304601f81018390048302840183019094528383529192908301828280156101705780601f1061014557610100808354040283529160200191610170565b820191906000526020600020905b81548152906001019060200180831161015357829003601f168201915b505050505081565b6000805460408051602060026001851615610100026000190190941693909304601f810184900484028201840190925281815292918301828280156101705780601f106101455761010080835404028352916020019161017056fea264697066735822122068c30458ea1da7292130cface386ebe2353b4ae6edbc294b9685792be135ae3064736f6c634300060100334f776e61626c653a206e6577206f776e657220697320746865207a65726f2061646472657373a2646970667358221220efd3a98e5902490ad44defae4fd0682ccc394dfc0cf01d217eedf74b3771985564736f6c63430006010033",
+    "sourceMap": "111:783:2:-:0;;;208:91;8:9:-1;5:2;;;30:1;27;20:12;5:2;208:91:2;;;;;;;;;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;-1:-1;208:91:2;714:17:1;734:12;:10;:12::i;:::-;756:6;:18;;-1:-1:-1;;;;;;756:18:1;-1:-1:-1;;;;;756:18:1;;;;;;;789:43;;756:18;;-1:-1:-1;756:18:1;789:43;;756:6;;789:43;-1:-1:-1;256:7:2;:35;;-1:-1:-1;;;;;;256:35:2;-1:-1:-1;;;;;256:35:2;;;;;;;;;;111:783;;789:96:0;868:10;789:96;:::o;111:783:2:-;;;;;;;",
+    "deployedSourceMap": "111:783:2:-:0;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;111:783:2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;146:23;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;-1:-1;146:23:2;;:::i;:::-;;;;-1:-1:-1;;;;;146:23:2;;;;;;;;;;;;;;1700:137:1;;;:::i;:::-;;915:77;;;:::i;1266:92::-;;;:::i;:::-;;;;;;;;;;;;;;;;;;432:459:2;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;432:459:2;;;;;;;;21:11:-1;5:28;;2:2;;;46:1;43;36:12;2:2;432:459:2;;35:9:-1;28:4;12:14;8:25;5:40;2:2;;;58:1;55;48:12;2:2;432:459:2;;;;;;100:9:-1;95:1;81:12;77:20;67:8;63:35;60:50;39:11;25:12;22:29;11:107;8:2;;;131:1;128;121:12;8:2;432:459:2;;;;;;;;;;;21:11:-1;5:28;;2:2;;;46:1;43;36:12;2:2;432:459:2;;35:9:-1;28:4;12:14;8:25;5:40;2:2;;;58:1;55;48:12;2:2;432:459:2;;;;;;100:9:-1;95:1;81:12;77:20;67:8;63:35;60:50;39:11;25:12;22:29;11:107;8:2;;;131:1;128;121:12;8:2;432:459:2;;;;;;;;;;;21:11:-1;5:28;;2:2;;;46:1;43;36:12;2:2;432:459:2;;35:9:-1;28:4;12:14;8:25;5:40;2:2;;;58:1;55;48:12;2:2;432:459:2;;;;;;100:9:-1;95:1;81:12;77:20;67:8;63:35;60:50;39:11;25:12;22:29;11:107;8:2;;;131:1;128;121:12;8:2;-1:-1;432:459:2;;-1:-1:-1;432:459:2;-1:-1:-1;432:459:2;:::i;1986:107:1:-;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;-1:-1;1986:107:1;-1:-1:-1;;;;;1986:107:1;;:::i;146:23:2:-;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;;;;146:23:2;;-1:-1:-1;146:23:2;:::o;1700:137:1:-;1119:9;:7;:9::i;:::-;1111:54;;;;;-1:-1:-1;;;1111:54:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1798:1:::1;1782:6:::0;;1761:40:::1;::::0;-1:-1:-1;;;;;1782:6:1;;::::1;::::0;1761:40:::1;::::0;1798:1;;1761:40:::1;1828:1;1811:19:::0;;-1:-1:-1;;;;;;1811:19:1::1;::::0;;1700:137::o;915:77::-;953:7;979:6;-1:-1:-1;;;;;979:6:1;;915:77::o;1266:92::-;1306:4;1345:6;;-1:-1:-1;;;;;1345:6:1;1329:12;:10;:12::i;:::-;-1:-1:-1;;;;;1329:22:1;;;1266:92;-1:-1:-1;1266:92:1:o;432:459:2:-;348:7;;:27;;;-1:-1:-1;;;348:27:2;;364:10;348:27;;;;;;-1:-1:-1;;;;;348:7:2;;;;-1:-1:-1;;348:27:2;;;;;;;;;;;;;;;:7;:27;;;5:2:-1;;;;30:1;27;20:12;5:2;348:27:2;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;348:27:2;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;-1:-1;348:27:2;340:64;;;;;-1:-1:-1;;;340:64:2;;;;;;;;;;;;;;;;;;;;;;;;;;;;690:13:::1;731:5;;751:7;:5;:7::i;:::-;773:14;;802:10;827:14;;706:146;;;;;:::i;:::-;-1:-1:-1::0;;;;;706:146:2;;::::1;;::::0;::::1;::::0;;::::1;::::0;;;;-1:-1:-1;706:146:2;;;;;;;;;;;;;;;;;;;;;;;1:33:-1::1;99:1;81:16:::0;;::::1;74:27:::0;137:4:::1;117:14;-1:-1:::0;;113:30:::1;157:16:::0;;::::1;706:146:2::0;;::::1;::::0;;;;;::::1;;::::0;-1:-1:-1;706:146:2;;;;;1:33:-1::1;99:1;81:16:::0;;::::1;74:27:::0;137:4:::1;117:14;-1:-1:::0;;113:30:::1;157:16:::0;;::::1;706:146:2::0;;::::1;::::0;;;;;::::1;;::::0;-1:-1:-1;706:146:2;;;;;1:33:-1::1;99:1;81:16:::0;;::::1;74:27:::0;;;706:146:2::1;::::0;137:4:-1::1;117:14:::0;;::::1;-1:-1:::0;;113:30:::1;157:16:::0;;::::1;706:146:2::0;;::::1;::::0;-1:-1:-1;706:146:2;-1:-1:-1;99:1;;-1:-1;;;;;;;;;;;706:146:2::1;;;8:9:-1;5:2;;;45:16;42:1;39::::0;24:38:::1;77:16;74:1;67:27;5:2;-1:-1:::0;863:7:2::1;27:10:-1::0;;23:18;;::::1;45:23:::0;;-1:-1;863:20:2;;;;;::::1;::::0;;-1:-1:-1;;;;;;863:20:2::1;-1:-1:-1::0;;;;;863:20:2;;;::::1;::::0;;;::::1;::::0;;-1:-1:-1;;;;;;;432:459:2:o;1986:107:1:-;1119:9;:7;:9::i;:::-;1111:54;;;;;-1:-1:-1;;;1111:54:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;2058:28:::1;2077:8;2058:18;:28::i;:::-;1986:107:::0;:::o;789:96:0:-;868:10;789:96;:::o;2194:259:1:-;-1:-1:-1;;;;;2280:22:1;;2259:107;;;;-1:-1:-1;;;2259:107:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;2402:6;;;2381:38;;-1:-1:-1;;;;;2381:38:1;;;;2402:6;;;2381:38;;;2429:6;:17;;-1:-1:-1;;;;;;2429:17:1;-1:-1:-1;;;;;2429:17:1;;;;;;;;;;2194:259::o;111:783:2:-;;;;;;;;:::o",
+    "sourcePath": "d:/tutorials/Html_Css/My_Websites/ASP.Net Core/MedicalOperations/contracts/Patient.sol",
+    "compiler": {
+        "name": "solc",
+        "version": "0.6.1+commit.e6f7d5a4"
+    },
+    "ast": {
+        "absolutePath": "d:/tutorials/Html_Css/My_Websites/ASP.Net Core/MedicalOperations/contracts/Patient.sol",
+        "exportedSymbols": {
+            "Patient": [
+                213
+            ]
+        },
+        "id": 214,
+        "nodeType": "SourceUnit",
+        "nodes": [
+            {
+                "id": 146,
+                "literals": [
+                    "solidity",
+                    "^",
+                    "0.6",
+                    ".0"
+                ],
+                "nodeType": "PragmaDirective",
+                "src": "0:23:2"
+            },
+            {
+                "absolutePath": "d:/tutorials/Html_Css/My_Websites/ASP.Net Core/MedicalOperations/contracts/Ownable.sol",
+                "file": "./Ownable.sol",
+                "id": 147,
+                "nodeType": "ImportDirective",
+                "scope": 214,
+                "sourceUnit": 145,
+                "src": "27:23:2",
+                "symbolAliases": [],
+                "unitAlias": ""
+            },
+            {
+                "absolutePath": "d:/tutorials/Html_Css/My_Websites/ASP.Net Core/MedicalOperations/contracts/Record.sol",
+                "file": "./Record.sol",
+                "id": 148,
+                "nodeType": "ImportDirective",
+                "scope": 214,
+                "sourceUnit": 351,
+                "src": "52:22:2",
+                "symbolAliases": [],
+                "unitAlias": ""
+            },
+            {
+                "absolutePath": "d:/tutorials/Html_Css/My_Websites/ASP.Net Core/MedicalOperations/contracts/PatientsFactory.sol",
+                "file": "./PatientsFactory.sol",
+                "id": 149,
+                "nodeType": "ImportDirective",
+                "scope": 214,
+                "sourceUnit": 312,
+                "src": "76:31:2",
+                "symbolAliases": [],
+                "unitAlias": ""
+            },
+            {
+                "abstract": false,
+                "baseContracts": [
+                    {
+                        "arguments": null,
+                        "baseName": {
+                            "contractScope": null,
+                            "id": 150,
+                            "name": "Ownable",
+                            "nodeType": "UserDefinedTypeName",
+                            "referencedDeclaration": 144,
+                            "src": "131:7:2",
+                            "typeDescriptions": {
+                                "typeIdentifier": "t_contract$_Ownable_$144",
+                                "typeString": "contract Ownable"
+                            }
+                        },
+                        "id": 151,
+                        "nodeType": "InheritanceSpecifier",
+                        "src": "131:7:2"
+                    }
+                ],
+                "contractDependencies": [
+                    22,
+                    144,
+                    350
+                ],
+                "contractKind": "contract",
+                "documentation": null,
+                "fullyImplemented": true,
+                "id": 213,
+                "linearizedBaseContracts": [
+                    213,
+                    144,
+                    22
+                ],
+                "name": "Patient",
+                "nodeType": "ContractDefinition",
+                "nodes": [
+                    {
+                        "constant": false,
+                        "functionSelector": "34461067",
+                        "id": 154,
+                        "name": "records",
+                        "nodeType": "VariableDeclaration",
+                        "overrides": null,
+                        "scope": 213,
+                        "src": "146:23:2",
+                        "stateVariable": true,
+                        "storageLocation": "default",
+                        "typeDescriptions": {
+                            "typeIdentifier": "t_array$_t_contract$_Record_$350_$dyn_storage",
+                            "typeString": "contract Record[]"
+                        },
+                        "typeName": {
+                            "baseType": {
+                                "contractScope": null,
+                                "id": 152,
+                                "name": "Record",
+                                "nodeType": "UserDefinedTypeName",
+                                "referencedDeclaration": 350,
+                                "src": "146:6:2",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_contract$_Record_$350",
+                                    "typeString": "contract Record"
+                                }
+                            },
+                            "id": 153,
+                            "length": null,
+                            "nodeType": "ArrayTypeName",
+                            "src": "146:8:2",
+                            "typeDescriptions": {
+                                "typeIdentifier": "t_array$_t_contract$_Record_$350_$dyn_storage_ptr",
+                                "typeString": "contract Record[]"
+                            }
+                        },
+                        "value": null,
+                        "visibility": "public"
+                    },
+                    {
+                        "constant": false,
+                        "id": 156,
+                        "name": "factory",
+                        "nodeType": "VariableDeclaration",
+                        "overrides": null,
+                        "scope": 213,
+                        "src": "176:23:2",
+                        "stateVariable": true,
+                        "storageLocation": "default",
+                        "typeDescriptions": {
+                            "typeIdentifier": "t_contract$_PatientsFactory_$311",
+                            "typeString": "contract PatientsFactory"
+                        },
+                        "typeName": {
+                            "contractScope": null,
+                            "id": 155,
+                            "name": "PatientsFactory",
+                            "nodeType": "UserDefinedTypeName",
+                            "referencedDeclaration": 311,
+                            "src": "176:15:2",
+                            "typeDescriptions": {
+                                "typeIdentifier": "t_contract$_PatientsFactory_$311",
+                                "typeString": "contract PatientsFactory"
+                            }
+                        },
+                        "value": null,
+                        "visibility": "internal"
+                    },
+                    {
+                        "body": {
+                            "id": 167,
+                            "nodeType": "Block",
+                            "src": "245:54:2",
+                            "statements": [
+                                {
+                                    "expression": {
+                                        "argumentTypes": null,
+                                        "id": 165,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "lValueRequested": false,
+                                        "leftHandSide": {
+                                            "argumentTypes": null,
+                                            "id": 161,
+                                            "name": "factory",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [],
+                                            "referencedDeclaration": 156,
+                                            "src": "256:7:2",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_contract$_PatientsFactory_$311",
+                                                "typeString": "contract PatientsFactory"
+                                            }
+                                        },
+                                        "nodeType": "Assignment",
+                                        "operator": "=",
+                                        "rightHandSide": {
+                                            "argumentTypes": null,
+                                            "arguments": [
+                                                {
+                                                    "argumentTypes": null,
+                                                    "id": 163,
+                                                    "name": "_address",
+                                                    "nodeType": "Identifier",
+                                                    "overloadedDeclarations": [],
+                                                    "referencedDeclaration": 158,
+                                                    "src": "282:8:2",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_address",
+                                                        "typeString": "address"
+                                                    }
+                                                }
+                                            ],
+                                            "expression": {
+                                                "argumentTypes": [
+                                                    {
+                                                        "typeIdentifier": "t_address",
+                                                        "typeString": "address"
+                                                    }
+                                                ],
+                                                "id": 162,
+                                                "name": "PatientsFactory",
+                                                "nodeType": "Identifier",
+                                                "overloadedDeclarations": [],
+                                                "referencedDeclaration": 311,
+                                                "src": "266:15:2",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_type$_t_contract$_PatientsFactory_$311_$",
+                                                    "typeString": "type(contract PatientsFactory)"
+                                                }
+                                            },
+                                            "id": 164,
+                                            "isConstant": false,
+                                            "isLValue": false,
+                                            "isPure": false,
+                                            "kind": "typeConversion",
+                                            "lValueRequested": false,
+                                            "names": [],
+                                            "nodeType": "FunctionCall",
+                                            "src": "266:25:2",
+                                            "tryCall": false,
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_contract$_PatientsFactory_$311",
+                                                "typeString": "contract PatientsFactory"
+                                            }
+                                        },
+                                        "src": "256:35:2",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_contract$_PatientsFactory_$311",
+                                            "typeString": "contract PatientsFactory"
+                                        }
+                                    },
+                                    "id": 166,
+                                    "nodeType": "ExpressionStatement",
+                                    "src": "256:35:2"
+                                }
+                            ]
+                        },
+                        "documentation": null,
+                        "id": 168,
+                        "implemented": true,
+                        "kind": "constructor",
+                        "modifiers": [],
+                        "name": "",
+                        "nodeType": "FunctionDefinition",
+                        "overrides": null,
+                        "parameters": {
+                            "id": 159,
+                            "nodeType": "ParameterList",
+                            "parameters": [
+                                {
+                                    "constant": false,
+                                    "id": 158,
+                                    "name": "_address",
+                                    "nodeType": "VariableDeclaration",
+                                    "overrides": null,
+                                    "scope": 168,
+                                    "src": "220:16:2",
+                                    "stateVariable": false,
+                                    "storageLocation": "default",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_address",
+                                        "typeString": "address"
+                                    },
+                                    "typeName": {
+                                        "id": 157,
+                                        "name": "address",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "220:7:2",
+                                        "stateMutability": "nonpayable",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_address",
+                                            "typeString": "address"
+                                        }
+                                    },
+                                    "value": null,
+                                    "visibility": "internal"
+                                }
+                            ],
+                            "src": "219:18:2"
+                        },
+                        "returnParameters": {
+                            "id": 160,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "245:0:2"
+                        },
+                        "scope": 213,
+                        "src": "208:91:2",
+                        "stateMutability": "nonpayable",
+                        "virtual": false,
+                        "visibility": "public"
+                    },
+                    {
+                        "body": {
+                            "id": 180,
+                            "nodeType": "Block",
+                            "src": "329:95:2",
+                            "statements": [
+                                {
+                                    "expression": {
+                                        "argumentTypes": null,
+                                        "arguments": [
+                                            {
+                                                "argumentTypes": null,
+                                                "arguments": [
+                                                    {
+                                                        "argumentTypes": null,
+                                                        "expression": {
+                                                            "argumentTypes": null,
+                                                            "id": 173,
+                                                            "name": "msg",
+                                                            "nodeType": "Identifier",
+                                                            "overloadedDeclarations": [],
+                                                            "referencedDeclaration": 365,
+                                                            "src": "364:3:2",
+                                                            "typeDescriptions": {
+                                                                "typeIdentifier": "t_magic_message",
+                                                                "typeString": "msg"
+                                                            }
+                                                        },
+                                                        "id": 174,
+                                                        "isConstant": false,
+                                                        "isLValue": false,
+                                                        "isPure": false,
+                                                        "lValueRequested": false,
+                                                        "memberName": "sender",
+                                                        "nodeType": "MemberAccess",
+                                                        "referencedDeclaration": null,
+                                                        "src": "364:10:2",
+                                                        "typeDescriptions": {
+                                                            "typeIdentifier": "t_address_payable",
+                                                            "typeString": "address payable"
+                                                        }
+                                                    }
+                                                ],
+                                                "expression": {
+                                                    "argumentTypes": [
+                                                        {
+                                                            "typeIdentifier": "t_address_payable",
+                                                            "typeString": "address payable"
+                                                        }
+                                                    ],
+                                                    "expression": {
+                                                        "argumentTypes": null,
+                                                        "id": 171,
+                                                        "name": "factory",
+                                                        "nodeType": "Identifier",
+                                                        "overloadedDeclarations": [],
+                                                        "referencedDeclaration": 156,
+                                                        "src": "348:7:2",
+                                                        "typeDescriptions": {
+                                                            "typeIdentifier": "t_contract$_PatientsFactory_$311",
+                                                            "typeString": "contract PatientsFactory"
+                                                        }
+                                                    },
+                                                    "id": 172,
+                                                    "isConstant": false,
+                                                    "isLValue": false,
+                                                    "isPure": false,
+                                                    "lValueRequested": false,
+                                                    "memberName": "clinics",
+                                                    "nodeType": "MemberAccess",
+                                                    "referencedDeclaration": 233,
+                                                    "src": "348:15:2",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_function_external_view$_t_address_$returns$_t_bool_$",
+                                                        "typeString": "function (address) view external returns (bool)"
+                                                    }
+                                                },
+                                                "id": 175,
+                                                "isConstant": false,
+                                                "isLValue": false,
+                                                "isPure": false,
+                                                "kind": "functionCall",
+                                                "lValueRequested": false,
+                                                "names": [],
+                                                "nodeType": "FunctionCall",
+                                                "src": "348:27:2",
+                                                "tryCall": false,
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_bool",
+                                                    "typeString": "bool"
+                                                }
+                                            },
+                                            {
+                                                "argumentTypes": null,
+                                                "hexValue": "4f6e6c7920636c696e6963732061726520616c6c6f776564",
+                                                "id": 176,
+                                                "isConstant": false,
+                                                "isLValue": false,
+                                                "isPure": true,
+                                                "kind": "string",
+                                                "lValueRequested": false,
+                                                "nodeType": "Literal",
+                                                "src": "377:26:2",
+                                                "subdenomination": null,
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_stringliteral_ea26fe7616571567fdf52de0a04df5dc01944323451f5a3b799f7aea2d4089a6",
+                                                    "typeString": "literal_string \"Only clinics are allowed\""
+                                                },
+                                                "value": "Only clinics are allowed"
+                                            }
+                                        ],
+                                        "expression": {
+                                            "argumentTypes": [
+                                                {
+                                                    "typeIdentifier": "t_bool",
+                                                    "typeString": "bool"
+                                                },
+                                                {
+                                                    "typeIdentifier": "t_stringliteral_ea26fe7616571567fdf52de0a04df5dc01944323451f5a3b799f7aea2d4089a6",
+                                                    "typeString": "literal_string \"Only clinics are allowed\""
+                                                }
+                                            ],
+                                            "id": 170,
+                                            "name": "require",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [
+                                                368,
+                                                369
+                                            ],
+                                            "referencedDeclaration": 369,
+                                            "src": "340:7:2",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
+                                                "typeString": "function (bool,string memory) pure"
+                                            }
+                                        },
+                                        "id": 177,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "kind": "functionCall",
+                                        "lValueRequested": false,
+                                        "names": [],
+                                        "nodeType": "FunctionCall",
+                                        "src": "340:64:2",
+                                        "tryCall": false,
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_tuple$__$",
+                                            "typeString": "tuple()"
+                                        }
+                                    },
+                                    "id": 178,
+                                    "nodeType": "ExpressionStatement",
+                                    "src": "340:64:2"
+                                },
+                                {
+                                    "id": 179,
+                                    "nodeType": "PlaceholderStatement",
+                                    "src": "415:1:2"
+                                }
+                            ]
+                        },
+                        "documentation": null,
+                        "id": 181,
+                        "name": "onlyClinic",
+                        "nodeType": "ModifierDefinition",
+                        "overrides": null,
+                        "parameters": {
+                            "id": 169,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "326:2:2"
+                        },
+                        "src": "307:117:2",
+                        "virtual": false,
+                        "visibility": "internal"
+                    },
+                    {
+                        "body": {
+                            "id": 211,
+                            "nodeType": "Block",
+                            "src": "625:266:2",
+                            "statements": [
+                                {
+                                    "assignments": [
+                                        193
+                                    ],
+                                    "declarations": [
+                                        {
+                                            "constant": false,
+                                            "id": 193,
+                                            "name": "record",
+                                            "nodeType": "VariableDeclaration",
+                                            "overrides": null,
+                                            "scope": 211,
+                                            "src": "690:13:2",
+                                            "stateVariable": false,
+                                            "storageLocation": "default",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_contract$_Record_$350",
+                                                "typeString": "contract Record"
+                                            },
+                                            "typeName": {
+                                                "contractScope": null,
+                                                "id": 192,
+                                                "name": "Record",
+                                                "nodeType": "UserDefinedTypeName",
+                                                "referencedDeclaration": 350,
+                                                "src": "690:6:2",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_contract$_Record_$350",
+                                                    "typeString": "contract Record"
+                                                }
+                                            },
+                                            "value": null,
+                                            "visibility": "internal"
+                                        }
+                                    ],
+                                    "id": 204,
+                                    "initialValue": {
+                                        "argumentTypes": null,
+                                        "arguments": [
+                                            {
+                                                "argumentTypes": null,
+                                                "id": 196,
+                                                "name": "_data",
+                                                "nodeType": "Identifier",
+                                                "overloadedDeclarations": [],
+                                                "referencedDeclaration": 183,
+                                                "src": "731:5:2",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_string_calldata_ptr",
+                                                    "typeString": "string calldata"
+                                                }
+                                            },
+                                            {
+                                                "argumentTypes": null,
+                                                "arguments": [],
+                                                "expression": {
+                                                    "argumentTypes": [],
+                                                    "id": 197,
+                                                    "name": "owner",
+                                                    "nodeType": "Identifier",
+                                                    "overloadedDeclarations": [],
+                                                    "referencedDeclaration": 64,
+                                                    "src": "751:5:2",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_function_internal_view$__$returns$_t_address_$",
+                                                        "typeString": "function () view returns (address)"
+                                                    }
+                                                },
+                                                "id": 198,
+                                                "isConstant": false,
+                                                "isLValue": false,
+                                                "isPure": false,
+                                                "kind": "functionCall",
+                                                "lValueRequested": false,
+                                                "names": [],
+                                                "nodeType": "FunctionCall",
+                                                "src": "751:7:2",
+                                                "tryCall": false,
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_address",
+                                                    "typeString": "address"
+                                                }
+                                            },
+                                            {
+                                                "argumentTypes": null,
+                                                "id": 199,
+                                                "name": "_encryptedKey1",
+                                                "nodeType": "Identifier",
+                                                "overloadedDeclarations": [],
+                                                "referencedDeclaration": 185,
+                                                "src": "773:14:2",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_string_calldata_ptr",
+                                                    "typeString": "string calldata"
+                                                }
+                                            },
+                                            {
+                                                "argumentTypes": null,
+                                                "expression": {
+                                                    "argumentTypes": null,
+                                                    "id": 200,
+                                                    "name": "msg",
+                                                    "nodeType": "Identifier",
+                                                    "overloadedDeclarations": [],
+                                                    "referencedDeclaration": 365,
+                                                    "src": "802:3:2",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_magic_message",
+                                                        "typeString": "msg"
+                                                    }
+                                                },
+                                                "id": 201,
+                                                "isConstant": false,
+                                                "isLValue": false,
+                                                "isPure": false,
+                                                "lValueRequested": false,
+                                                "memberName": "sender",
+                                                "nodeType": "MemberAccess",
+                                                "referencedDeclaration": null,
+                                                "src": "802:10:2",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_address_payable",
+                                                    "typeString": "address payable"
+                                                }
+                                            },
+                                            {
+                                                "argumentTypes": null,
+                                                "id": 202,
+                                                "name": "_encryptedKey2",
+                                                "nodeType": "Identifier",
+                                                "overloadedDeclarations": [],
+                                                "referencedDeclaration": 187,
+                                                "src": "827:14:2",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_string_calldata_ptr",
+                                                    "typeString": "string calldata"
+                                                }
+                                            }
+                                        ],
+                                        "expression": {
+                                            "argumentTypes": [
+                                                {
+                                                    "typeIdentifier": "t_string_calldata_ptr",
+                                                    "typeString": "string calldata"
+                                                },
+                                                {
+                                                    "typeIdentifier": "t_address",
+                                                    "typeString": "address"
+                                                },
+                                                {
+                                                    "typeIdentifier": "t_string_calldata_ptr",
+                                                    "typeString": "string calldata"
+                                                },
+                                                {
+                                                    "typeIdentifier": "t_address_payable",
+                                                    "typeString": "address payable"
+                                                },
+                                                {
+                                                    "typeIdentifier": "t_string_calldata_ptr",
+                                                    "typeString": "string calldata"
+                                                }
+                                            ],
+                                            "id": 195,
+                                            "isConstant": false,
+                                            "isLValue": false,
+                                            "isPure": false,
+                                            "lValueRequested": false,
+                                            "nodeType": "NewExpression",
+                                            "src": "706:10:2",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_function_creation_nonpayable$_t_string_memory_ptr_$_t_address_$_t_string_memory_ptr_$_t_address_$_t_string_memory_ptr_$returns$_t_contract$_Record_$350_$",
+                                                "typeString": "function (string memory,address,string memory,address,string memory) returns (contract Record)"
+                                            },
+                                            "typeName": {
+                                                "contractScope": null,
+                                                "id": 194,
+                                                "name": "Record",
+                                                "nodeType": "UserDefinedTypeName",
+                                                "referencedDeclaration": 350,
+                                                "src": "710:6:2",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_contract$_Record_$350",
+                                                    "typeString": "contract Record"
+                                                }
+                                            }
+                                        },
+                                        "id": 203,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "kind": "functionCall",
+                                        "lValueRequested": false,
+                                        "names": [],
+                                        "nodeType": "FunctionCall",
+                                        "src": "706:146:2",
+                                        "tryCall": false,
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_contract$_Record_$350",
+                                            "typeString": "contract Record"
+                                        }
+                                    },
+                                    "nodeType": "VariableDeclarationStatement",
+                                    "src": "690:162:2"
+                                },
+                                {
+                                    "expression": {
+                                        "argumentTypes": null,
+                                        "arguments": [
+                                            {
+                                                "argumentTypes": null,
+                                                "id": 208,
+                                                "name": "record",
+                                                "nodeType": "Identifier",
+                                                "overloadedDeclarations": [],
+                                                "referencedDeclaration": 193,
+                                                "src": "876:6:2",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_contract$_Record_$350",
+                                                    "typeString": "contract Record"
+                                                }
+                                            }
+                                        ],
+                                        "expression": {
+                                            "argumentTypes": [
+                                                {
+                                                    "typeIdentifier": "t_contract$_Record_$350",
+                                                    "typeString": "contract Record"
+                                                }
+                                            ],
+                                            "expression": {
+                                                "argumentTypes": null,
+                                                "id": 205,
+                                                "name": "records",
+                                                "nodeType": "Identifier",
+                                                "overloadedDeclarations": [],
+                                                "referencedDeclaration": 154,
+                                                "src": "863:7:2",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_array$_t_contract$_Record_$350_$dyn_storage",
+                                                    "typeString": "contract Record[] storage ref"
+                                                }
+                                            },
+                                            "id": 207,
+                                            "isConstant": false,
+                                            "isLValue": false,
+                                            "isPure": false,
+                                            "lValueRequested": false,
+                                            "memberName": "push",
+                                            "nodeType": "MemberAccess",
+                                            "referencedDeclaration": null,
+                                            "src": "863:12:2",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_function_arraypush_nonpayable$_t_contract$_Record_$350_$returns$__$",
+                                                "typeString": "function (contract Record)"
+                                            }
+                                        },
+                                        "id": 209,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "kind": "functionCall",
+                                        "lValueRequested": false,
+                                        "names": [],
+                                        "nodeType": "FunctionCall",
+                                        "src": "863:20:2",
+                                        "tryCall": false,
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_tuple$__$",
+                                            "typeString": "tuple()"
+                                        }
+                                    },
+                                    "id": 210,
+                                    "nodeType": "ExpressionStatement",
+                                    "src": "863:20:2"
+                                }
+                            ]
+                        },
+                        "documentation": null,
+                        "functionSelector": "96e8d14c",
+                        "id": 212,
+                        "implemented": true,
+                        "kind": "function",
+                        "modifiers": [
+                            {
+                                "arguments": null,
+                                "id": 190,
+                                "modifierName": {
+                                    "argumentTypes": null,
+                                    "id": 189,
+                                    "name": "onlyClinic",
+                                    "nodeType": "Identifier",
+                                    "overloadedDeclarations": [],
+                                    "referencedDeclaration": 181,
+                                    "src": "614:10:2",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_modifier$__$",
+                                        "typeString": "modifier ()"
+                                    }
+                                },
+                                "nodeType": "ModifierInvocation",
+                                "src": "614:10:2"
+                            }
+                        ],
+                        "name": "newRecord",
+                        "nodeType": "FunctionDefinition",
+                        "overrides": null,
+                        "parameters": {
+                            "id": 188,
+                            "nodeType": "ParameterList",
+                            "parameters": [
+                                {
+                                    "constant": false,
+                                    "id": 183,
+                                    "name": "_data",
+                                    "nodeType": "VariableDeclaration",
+                                    "overrides": null,
+                                    "scope": 212,
+                                    "src": "461:21:2",
+                                    "stateVariable": false,
+                                    "storageLocation": "calldata",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_string_calldata_ptr",
+                                        "typeString": "string"
+                                    },
+                                    "typeName": {
+                                        "id": 182,
+                                        "name": "string",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "461:6:2",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_string_storage_ptr",
+                                            "typeString": "string"
+                                        }
+                                    },
+                                    "value": null,
+                                    "visibility": "internal"
+                                },
+                                {
+                                    "constant": false,
+                                    "id": 185,
+                                    "name": "_encryptedKey1",
+                                    "nodeType": "VariableDeclaration",
+                                    "overrides": null,
+                                    "scope": 212,
+                                    "src": "493:30:2",
+                                    "stateVariable": false,
+                                    "storageLocation": "calldata",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_string_calldata_ptr",
+                                        "typeString": "string"
+                                    },
+                                    "typeName": {
+                                        "id": 184,
+                                        "name": "string",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "493:6:2",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_string_storage_ptr",
+                                            "typeString": "string"
+                                        }
+                                    },
+                                    "value": null,
+                                    "visibility": "internal"
+                                },
+                                {
+                                    "constant": false,
+                                    "id": 187,
+                                    "name": "_encryptedKey2",
+                                    "nodeType": "VariableDeclaration",
+                                    "overrides": null,
+                                    "scope": 212,
+                                    "src": "550:30:2",
+                                    "stateVariable": false,
+                                    "storageLocation": "calldata",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_string_calldata_ptr",
+                                        "typeString": "string"
+                                    },
+                                    "typeName": {
+                                        "id": 186,
+                                        "name": "string",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "550:6:2",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_string_storage_ptr",
+                                            "typeString": "string"
+                                        }
+                                    },
+                                    "value": null,
+                                    "visibility": "internal"
+                                }
+                            ],
+                            "src": "450:154:2"
+                        },
+                        "returnParameters": {
+                            "id": 191,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "625:0:2"
+                        },
+                        "scope": 213,
+                        "src": "432:459:2",
+                        "stateMutability": "nonpayable",
+                        "virtual": false,
+                        "visibility": "external"
+                    }
+                ],
+                "scope": 214,
+                "src": "111:783:2"
+            }
+        ],
+        "src": "0:896:2"
+    },
+    "functionHashes": {
+        "isOwner()": "8f32d59b",
+        "newRecord(string,string,string)": "96e8d14c",
+        "owner()": "8da5cb5b",
+        "records(uint256)": "34461067",
+        "renounceOwnership()": "715018a6",
+        "transferOwnership(address)": "f2fde38b"
+    },
+    "gasEstimates": {
+        "creation": {
+            "codeDepositCost": "606200",
+            "executionCost": "infinite",
+            "totalCost": "infinite"
+        },
+        "external": {
+            "isOwner()": "1124",
+            "newRecord(string,string,string)": "infinite",
+            "owner()": "1059",
+            "records(uint256)": "1948",
+            "renounceOwnership()": "24245",
+            "transferOwnership(address)": "infinite"
+        }
+    }
+}

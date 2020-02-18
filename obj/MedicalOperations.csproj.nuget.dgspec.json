@@ -1,0 +1,62 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\tutorials\\Html_Css\\My_Websites\\ASP.Net Core\\MedicalOperations\\MedicalOperations.csproj": {}
+  },
+  "projects": {
+    "D:\\tutorials\\Html_Css\\My_Websites\\ASP.Net Core\\MedicalOperations\\MedicalOperations.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\tutorials\\Html_Css\\My_Websites\\ASP.Net Core\\MedicalOperations\\MedicalOperations.csproj",
+        "projectName": "MedicalOperations",
+        "projectPath": "D:\\tutorials\\Html_Css\\My_Websites\\ASP.Net Core\\MedicalOperations\\MedicalOperations.csproj",
+        "packagesPath": "C:\\Users\\MTG\\.nuget\\packages\\",
+        "outputPath": "D:\\tutorials\\Html_Css\\My_Websites\\ASP.Net Core\\MedicalOperations\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\MTG\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "Nethereum.Web3": {
+              "target": "Package",
+              "version": "[3.7.1, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}

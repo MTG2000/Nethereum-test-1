@@ -1,0 +1,11 @@
+D:\tutorials\Html_Css\My_Websites\ASP.Net Core\MedicalOperations\bin\Debug\netcoreapp2.2\MedicalOperations.deps.json
+D:\tutorials\Html_Css\My_Websites\ASP.Net Core\MedicalOperations\bin\Debug\netcoreapp2.2\MedicalOperations.runtimeconfig.json
+D:\tutorials\Html_Css\My_Websites\ASP.Net Core\MedicalOperations\bin\Debug\netcoreapp2.2\MedicalOperations.runtimeconfig.dev.json
+d:\tutorials\Html_Css\My_Websites\ASP.Net Core\MedicalOperations\bin\Debug\netcoreapp2.2\MedicalOperations.dll
+d:\tutorials\Html_Css\My_Websites\ASP.Net Core\MedicalOperations\bin\Debug\netcoreapp2.2\MedicalOperations.pdb
+d:\tutorials\Html_Css\My_Websites\ASP.Net Core\MedicalOperations\obj\Debug\netcoreapp2.2\MedicalOperations.csprojAssemblyReference.cache
+d:\tutorials\Html_Css\My_Websites\ASP.Net Core\MedicalOperations\obj\Debug\netcoreapp2.2\MedicalOperations.csproj.CoreCompileInputs.cache
+d:\tutorials\Html_Css\My_Websites\ASP.Net Core\MedicalOperations\obj\Debug\netcoreapp2.2\MedicalOperations.AssemblyInfoInputs.cache
+d:\tutorials\Html_Css\My_Websites\ASP.Net Core\MedicalOperations\obj\Debug\netcoreapp2.2\MedicalOperations.AssemblyInfo.cs
+d:\tutorials\Html_Css\My_Websites\ASP.Net Core\MedicalOperations\obj\Debug\netcoreapp2.2\MedicalOperations.dll
+d:\tutorials\Html_Css\My_Websites\ASP.Net Core\MedicalOperations\obj\Debug\netcoreapp2.2\MedicalOperations.pdb
